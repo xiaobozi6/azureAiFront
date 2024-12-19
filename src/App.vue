@@ -33,7 +33,7 @@ export default {
     const performSearch = async (query) => {
       loading.value = true
       try {
-        const res = await axios.post('azureaiend-czbxc8dmejeme8g5.eastasia-01.azurewebsites.net/query', { query })
+        const res = await axios.post('https://azuraiend-c9fuc7afa0ewb6f4.eastasia-01.azurewebsites.net/query', { query })
         response.value = res.data.answer
       } catch (error) {
         response.value = 'Error retrieving answer.'
